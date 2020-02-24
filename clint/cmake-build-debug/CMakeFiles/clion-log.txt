@@ -1,0 +1,4 @@
+/home/jiangsongdong/CMake/cmake-3.14.5/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/jiangsongdong/CLionProjects/chat-room/clint
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug
