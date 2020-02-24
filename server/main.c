@@ -16,6 +16,7 @@ int clnt_socks[MAX_CLINT];
 pthread_mutex_t mutex;
 
 int main(int argc,char* arg[]) {
+    printf("1");
     int serv_sock,clnt_sock;
     struct sockaddr_in serv_adr,clnt_adr;
     socklen_t clnt_adr_sz;
