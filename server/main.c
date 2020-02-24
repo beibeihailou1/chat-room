@@ -9,14 +9,13 @@
 #define MAX_CLINT 256
 
 void *handle_clnt(void *arg);
-void send_msg(char *msg,int len);
+void send_msg(char *msg,int len,int send_sock);
 void error_handling(char *msg);
 int clnt_cnt=0;
 int clnt_socks[MAX_CLINT];
 pthread_mutex_t mutex;
 
 int main(int argc,char* arg[]) {
-    printf("1");
     int serv_sock,clnt_sock;
     struct sockaddr_in serv_adr,clnt_adr;
     socklen_t clnt_adr_sz;
@@ -75,10 +74,10 @@ void *handle_clnt(void *arg){
     int str_len=0,i;
     char msg[BUF_SIZE];
     str_len=read(clnt_sock,msg, sizeof(msg));
-    send_msg(msg,str_len);
+    send_msg(msg,str_len,clnt_sock);
 
     while((str_len=read(clnt_sock,msg, sizeof(msg)))!=0){
-        send_msg(msg,str_len);
+        send_msg(msg,str_len,clnt_sock);
     }
     pthread_mutex_lock(&mutex);
     for(i=0;i<clnt_cnt;i++){
@@ -95,11 +94,13 @@ void *handle_clnt(void *arg){
     return NULL;
 }
 
-void send_msg(char *msg,int len){
+void send_msg(char *msg,int len,int send_sock){
     int i;
     pthread_mutex_lock(&mutex);
     for(i=0;i<clnt_cnt;i++){
-        write(clnt_socks[i],msg,len);
+        if(clnt_socks[i]!=send_sock){
+            write(clnt_socks[i],msg,len);
+        }
     }
     pthread_mutex_unlock(&mutex);
 }

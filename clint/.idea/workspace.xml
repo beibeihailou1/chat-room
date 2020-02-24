@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="clint" targetName="clint2" />
       <config projectName="clint" targetName="clint" />
     </generated>
   </component>
@@ -45,12 +46,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.clint2">
     <configuration name="clint" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="127.0.0.1 9190 Jiang" PASS_PARENT_ENVS_2="true" PROJECT_NAME="clint" TARGET_NAME="clint" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="clint" RUN_TARGET_NAME="clint">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="clint2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="127.0.0.1 9190 Songdong" PASS_PARENT_ENVS_2="true" PROJECT_NAME="clint" TARGET_NAME="clint2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="clint" RUN_TARGET_NAME="clint2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.clint" />
+      <item itemvalue="CMake Application.clint2" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -63,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582557356975</updated>
       <workItem from="1582557360264" duration="935000" />
-      <workItem from="1582558988221" duration="628000" />
+      <workItem from="1582558988221" duration="2881000" />
     </task>
     <servers />
   </component>

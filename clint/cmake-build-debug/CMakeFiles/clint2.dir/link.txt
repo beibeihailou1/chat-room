@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/clint2.dir/main.cpp.o  -o clint2 -lpthread 
