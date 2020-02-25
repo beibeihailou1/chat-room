@@ -65,13 +65,50 @@ CMAKE_SOURCE_DIR = /home/jiangsongdong/CLionProjects/chat-room/clint
 CMAKE_BINARY_DIR = /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/clint3.dir
+
+# All Build rule for target.
+CMakeFiles/clint3.dir/all:
+	$(MAKE) -f CMakeFiles/clint3.dir/build.make CMakeFiles/clint3.dir/depend
+	$(MAKE) -f CMakeFiles/clint3.dir/build.make CMakeFiles/clint3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target clint3"
+.PHONY : CMakeFiles/clint3.dir/all
+
+# Include target in all.
+all: CMakeFiles/clint3.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/clint3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clint3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/clint3.dir/rule
+
+# Convenience name for target.
+clint3: CMakeFiles/clint3.dir/rule
+
+.PHONY : clint3
+
+# clean rule for target.
+CMakeFiles/clint3.dir/clean:
+	$(MAKE) -f CMakeFiles/clint3.dir/build.make CMakeFiles/clint3.dir/clean
+.PHONY : CMakeFiles/clint3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/clint3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/clint.dir
 
 # All Build rule for target.
 CMakeFiles/clint.dir/all:
 	$(MAKE) -f CMakeFiles/clint.dir/build.make CMakeFiles/clint.dir/depend
 	$(MAKE) -f CMakeFiles/clint.dir/build.make CMakeFiles/clint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target clint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target clint"
 .PHONY : CMakeFiles/clint.dir/all
 
 # Include target in all.
@@ -81,7 +118,7 @@ all: CMakeFiles/clint.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/clint.dir/rule
@@ -108,7 +145,7 @@ clean: CMakeFiles/clint.dir/clean
 CMakeFiles/clint2.dir/all:
 	$(MAKE) -f CMakeFiles/clint2.dir/build.make CMakeFiles/clint2.dir/depend
 	$(MAKE) -f CMakeFiles/clint2.dir/build.make CMakeFiles/clint2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target clint2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target clint2"
 .PHONY : CMakeFiles/clint2.dir/all
 
 # Include target in all.

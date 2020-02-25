@@ -37,6 +37,52 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="clint3">
+				<Option output="/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/clint3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clint3"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clint3/fast">
+				<Option output="/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/clint3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clint3/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="clint">
 				<Option output="/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug/clint" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jiangsongdong/CLionProjects/chat-room/clint/cmake-build-debug"/>
@@ -130,7 +176,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jiangsongdong/CLionProjects/chat-room/clint/Service/Group.cpp">
+			<Option target="clint"/>
+		</Unit>
+		<Unit filename="/home/jiangsongdong/CLionProjects/chat-room/clint/Service/Group.h">
+			<Option target="clint"/>
+		</Unit>
 		<Unit filename="/home/jiangsongdong/CLionProjects/chat-room/clint/main.cpp">
+			<Option target="clint3"/>
 			<Option target="clint"/>
 			<Option target="clint2"/>
 		</Unit>

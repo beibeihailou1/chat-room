@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/clint.dir/main.cpp.o"
+  "CMakeFiles/clint.dir/Service/Group.cpp.o"
   "clint.pdb"
   "clint"
 )
